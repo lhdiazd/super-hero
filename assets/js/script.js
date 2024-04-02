@@ -3,13 +3,19 @@ $(document).ready(function () {
     let inputHeroId = $("#inputHeroId");
     let patron = /^[1-9][0-9]*$/;
     
+
+    function getSuperHeroId(inputElement){        
+        return inputElement.val();
+    }
     
-    function validateId(id){        
+    function validateSuperHeroId(id){        
         return patron.test(id);       
     }
 
+
+
     searchButton.click(function () {
-        console.log(validateId(inputHeroId.val()));
+        console.log(getId(inputHeroId));
     });
     
 
