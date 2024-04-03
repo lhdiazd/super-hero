@@ -32,9 +32,8 @@
             <div class="text-center my-4">
                 <img id="mainImg" src="assets/img/sh1.jpg" alt="foto principal" class="img-fluid rounded shadow">
             </div>
-            <div class="container my-4">
+            <div class="container my-5">
                 <div class="d-flex justify-content-center">
-
                     <form>
                         <h2>Encuentra tu SuperHero</h2>
                         <div class="mb-3">
@@ -54,11 +53,11 @@
 
         <section id="resultSection" class="container">
             <div class="d-flex justify-content-center  align-items-center">
-                <span class="text-center my-2 text-warning fs-2 fw-bold me-2">Encontrado</span>
+                <span class="text-center my-3 text-warning fs-2 fw-bold me-2">Encontrado</span>
                 <img src="assets/img/check.png" alt="check" width="32" height="32">
             </div>
             <div id="resultApiContainer" class="row d-flex justify-content-center justify-content-xxl-between">
-                <div class="card my-3 col-12 col-xl-6 shadow border" style="max-width: 40rem;">
+                <div class="card my-3 col-12 col-xl-6 shadow border" style="max-width:37rem;">
                     <div class="row g-0">
                         <div class="col-md-4 my-4">
                             <img id="superHeroImg" class="img-fluid rounded" alt="...">
@@ -102,9 +101,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12  col-xl-6 my-3 bg-success">
-                    <div id="chartContainer"></div>
-                </div>
+
+                <div id="chartContainer" class="col-12 col-xl-6 my-3 border shadow rounded"></div>
+
             </div>
         </section>
         <section id="errorSection">
@@ -113,13 +112,12 @@
                 <img src="assets/img/superheroe-triste.png" alt="triste" class="img-fluid" width="240" height="240">
             </div>
         </section>
-
         <section id="searchAgainSection">
-            <div class="container text-center my-3">
+            <div class="container text-center my-4">
                 <button type="button" id="searchAgainButton" class="btn btn-secondary fw-bold text-white">Nueva
                     búsqueda <i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-        </section>      
+        </section>
     </main>
 
 

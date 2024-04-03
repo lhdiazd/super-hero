@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
 #mainImg{
     width: 25rem;
 }
@@ -28,7 +33,12 @@ form{
 }
 
 
+#chartContainer{    
+    min-height: 550px;
+    max-width: 37rem;
+}
+
 .canvasjs-chart-canvas{
     width: 100%;
-    
+    padding: 1rem;
 }

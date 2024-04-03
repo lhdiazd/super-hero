@@ -70,7 +70,10 @@ $(document).ready(function () {
 
                     for (let property in response.powerstats) {
                         if (response.powerstats.hasOwnProperty(property)) {
-                            dataPoints.push({ label: property, y: parseInt(response.powerstats[property]) });
+                            let value = parseInt(response.powerstats[property]);
+                            if (!isNaN(value)) {
+                                dataPoints.push({ label: property, y: value });
+                            }
                         }
                     }
 
