@@ -1,5 +1,6 @@
 $(document).ready(function () {
     let searchHeroSection = $("#searchHeroSection");
+    let resultSection = $("#resultSection");
     let searchButton = $("#searchButton");
     let inputHeroId = $("#inputHeroId");
     let patron = /^[1-9][0-9]*$/;
@@ -30,6 +31,8 @@ $(document).ready(function () {
             type: 'GET',
             dataType: 'json',
             success: function(response) {
+                searchHeroSection.toggle();
+                resultSection.toggle();
                 showSuperHeroData(response);
             },
             error: function(xhr, status, error) {

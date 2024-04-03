@@ -2,7 +2,9 @@
     width: 25rem;
 }
 
-
+#resultSection{
+    display: none;
+}
 
 form{
     width: 25rem;
