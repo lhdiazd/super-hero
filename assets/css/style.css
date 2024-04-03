@@ -1,11 +1,18 @@
 #mainImg{
-    width: 30rem;
+    width: 25rem;
 }
 
+
+
 form{
-    width: 30rem;
+    width: 25rem;
 }
 
 #arrow{
     width: 10rem;
+}
+
+#inputHeroId{
+    background-color: rgb(252, 252, 202);
+    border: 1px solid rgb(196, 196, 196);
 }
