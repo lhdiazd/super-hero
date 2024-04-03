@@ -39,7 +39,7 @@ $(document).ready(function () {
     }
 
     function showSuperHeroData(response) {
-        $("#superHeroImg").attr("src", response.image ? response.image.url : "---------");
+        $("#superHeroImg").attr("src", response.image ? response.image.url : "");
         $("#superHeroName").text(response.name || ""); 
         $("#superHeroConnections").text(response.connections && response.connections["group-affiliation"] ? response.connections["group-affiliation"] : "");
         $("#superHeroPublisher").text(response.biography && response.biography.publisher ? response.biography.publisher : ""); 
@@ -48,10 +48,7 @@ $(document).ready(function () {
         $("#superHeroHeight").text(response.appearance && response.appearance.height ? response.appearance.height : ""); 
         $("#superHeroWeight").text(response.appearance && response.appearance.weight ? response.appearance.weight : ""); 
         $("#superHeroAliases").text(response.biography && response.biography.aliases ? response.biography.aliases.join(" ") : ""); 
-    }
-
-
-    
+    }  
 
     function fetchSuperHero(superheroId) {
         let superHeroapiUrl = 'https://www.superheroapi.com/api.php/4905856019427443/' + superheroId;
@@ -100,9 +97,6 @@ $(document).ready(function () {
             }
         });
     }
-
-
-
     searchButton.click(function () {
         let superHeroId = getSuperHeroId(inputHeroId);
         let isValidId = validateSuperHeroId(superHeroId);
@@ -119,8 +113,4 @@ $(document).ready(function () {
         inputHeroId.val("");
         showSearchSection();
     });
-
-
-
-
 });
