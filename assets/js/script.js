@@ -70,6 +70,8 @@ $(document).ready(function () {
                             let value = parseInt(response.powerstats[property]);
                             if (!isNaN(value)) {
                                 dataPoints.push({ label: property, y: value });
+                            } else {
+                                dataPoints.push({ label: property, y: 1 });
                             }
                         }
                     }
